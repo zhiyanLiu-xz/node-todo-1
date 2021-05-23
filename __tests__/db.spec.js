@@ -30,6 +30,6 @@ describe("db", () =>{
     })
       const list = [{title:'见肖战',done:false}]
       await db.write(list,'/xyz')
-      expect(fakeFile).toBe(JSON.stringify(list)+'/n')
+      expect(fakeFile).toBe(JSON.stringify(list))
   })
 });
